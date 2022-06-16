@@ -286,11 +286,13 @@ img {
 }
 .icon-team {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 0px;
-  margin: 16px 32px 30px 32px;
+  margin: 0px;
   list-style: none;
-  /* background-color: red; */
+}
+.team-links:not(:last-child) {
+  margin-right: 10px;
 }
 .team-links a {
   display: flex;
@@ -302,6 +304,7 @@ img {
 }
 .team-links a:hover {
   background-color: #188ce8;
+  fill: #ffffff;
 }
 .team-links a:focus {
   background-color: #188ce8;
@@ -354,33 +357,35 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.klients-list {
+.clients-list {
   display: flex;
   list-style: none;
-  justify-content: center;
-  justify-content: space-between;
   padding-left: 0px;
 }
-.klients-link {
+
+.clients-link {
+  width: calc((100%-150px) / 6);
+  margin-right: 30px;
+}
+.clients-link {
   display: block;
   width: 170px;
   height: 92px;
   background-color: #e5e5e5;
   border-radius: 4px;
   border: 1px solid #afb1b8;
+  padding: 16px 32px;
 }
-.klients-link:hover {
+.clients-link:hover {
   border: solid #2196f3;
 }
 
-.klients-icon {
+.clients-icon {
   display: block;
-  margin: 16px 32px;
   fill: #afb1b8;
 }
-.klients-icon:hover {
+.clients-icon:hover {
   fill: #2196f3;
-  box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
 }
 
 /* ----------footer-------------- */
@@ -499,10 +504,10 @@ img {
   margin-top: 0px;
   margin-bottom: 4px;
 }
-.project-item:hover {
+.project-link:hover {
   box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
 }
-.project-item:focus {
+.project-link:focus {
   box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
 }
 .project-list {
