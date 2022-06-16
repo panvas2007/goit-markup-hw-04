@@ -24,7 +24,9 @@
     <!--header-->
     <header class="header">
       <div class="container">
-        <a href="#" class="header-logo">Web<span class="header-desk">Studio</span></a>
+        <a href="#" class="header-logo"
+          >Web<span class="header-desk">Studio</span></a
+        >
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-item">
@@ -33,15 +35,27 @@
             <li class="header-item">
               <a href="./portfolio.html" class="header-link link">Портфолио</a>
             </li>
-            <li class="header-item"><a href="#контакты" class="header-link link">Контакты</a></li>
+            <li class="header-item">
+              <a href="#контакты" class="header-link link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-items list">
           <li class="header-item">
-            <a href="mailto:info@devstudio.com" class="header-contact link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="header-contact link">
+              <svg class="mail-icon" width="16px" height="12px">
+                <use href="./images/symbol-defs1.svg#icon-envelopehover1"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="header-item">
-            <a href="tel:+380961111111" class="header-contact link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="header-phone link">
+              <svg class="phone-icon" width="10px" height="16px">
+                <use href="./images/symbol-defs1.svg#icon-smartphone21"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -52,17 +66,31 @@
         <h1 class="visually-hidden">Наши работы</h1>
         <div class="container">
           <ul class="main-list list">
-            <li class="main-btn"><button type="button" class="main-button">Все</button></li>
-            <li class="main-btn"><button type="button" class="main-button">Веб-сайты</button></li>
-            <li class="main-btn"><button type="button" class="main-button">Приложения</button></li>
-            <li class="main-btn"><button type="button" class="main-button">Дизайн</button></li>
-            <li class="main-btn"><button type="button" class="main-button">Маркетинг</button></li>
+            <li class="main-btn">
+              <button type="button" class="main-button">Все</button>
+            </li>
+            <li class="main-btn">
+              <button type="button" class="main-button">Веб-сайты</button>
+            </li>
+            <li class="main-btn">
+              <button type="button" class="main-button">Приложения</button>
+            </li>
+            <li class="main-btn">
+              <button type="button" class="main-button">Дизайн</button>
+            </li>
+            <li class="main-btn">
+              <button type="button" class="main-button">Маркетинг</button>
+            </li>
           </ul>
           <ul class="project-list list">
             <li class="project-info">
               <div class="project-item">
                 <a href="" class="project-link link">
-                  <img src="./images/img 143.jpg" alt="фото сотрудников" width="370" />
+                  <img
+                    src="./images/img 143.jpg"
+                    alt="фото сотрудников"
+                    width="370"
+                  />
                   <div class="project">
                     <h2 class="project-title">Технокряк</h2>
                     <p class="project-text">Веб-сайт</p>
@@ -73,9 +101,15 @@
             <li class="project-info">
               <div class="project-item">
                 <a href="" class="project-link link">
-                  <img src="./images/img.jpg" alt="игра в батскетбол" width="370" />
+                  <img
+                    src="./images/img.jpg"
+                    alt="игра в батскетбол"
+                    width="370"
+                  />
                   <div class="project">
-                    <h2 lang="en" class="project-title">Постер New Orlean vs Golden Star</h2>
+                    <h2 lang="en" class="project-title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
                     <p class="project-text">Дизайн</p>
                   </div>
                 </a>
@@ -119,7 +153,9 @@
                 <a href="" class="project-link link">
                   <img src="./images/img44.png" alt="компьютер" width="370" />
                   <div class="project">
-                    <h2 lang="en" class="project-title">Inspiration has no Borders</h2>
+                    <h2 lang="en" class="project-title">
+                      Inspiration has no Borders
+                    </h2>
                     <p class="project-text">Веб-сайт</p>
                   </div>
                 </a>
@@ -164,17 +200,62 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="container">
-        <a href="#" class="footer-logo">Web<span class="footer-desk">Studio</span></a>
-        <ul id="контакты" class="footer-list list">
-          <li>
-            <a href="#контакты" class="footer-adress link">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="footer-link link">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+380961111111" class="footer-link link">+38 096 111 11 11</a></li>
-        </ul>
+      <div class="container box">
+        <div class="footer-contact">
+          <a href="#" class="footer-logo"
+            >Web<span class="footer-desk">Studio</span></a
+          >
+          <ul id="контакты" class="footer-list list">
+            <li class="footer-item">
+              <a href="#контакты" class="footer-adress link"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="mailto:info@devstudio.com" class="footer-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="tel:+380961111111" class="footer-link link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-icon">
+          <p class="footer-text">присоединяйтесь</p>
+          <ul class="icon-item">
+            <li class="icon-link">
+              <a href="#">
+                <svg class="icon-element" width="20px" height="20px">
+                  <use href="./images/symbol-defs1.svg#icon-instagram2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-link">
+              <a href="#">
+                <svg class="icon-element" width="20px" height="20px">
+                  <use href="./images/symbol-defs1.svg#icon-twitter1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-link">
+              <a href="#">
+                <svg class="icon-element" width="20px" height="20px">
+                  <use href="./images/symbol-defs1.svg#icon-facebook1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-link">
+              <a href="#">
+                <svg class="icon-element" width="20px" height="20px">
+                  <use href="./images/symbol-defs1.svg#icon-linkedin1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

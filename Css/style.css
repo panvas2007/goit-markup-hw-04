@@ -109,11 +109,11 @@ body {
 }
 .header-contact,
 .header-phone {
+  display: flex;
+  align-items: center;
   color: var(--contact-color);
 }
 .mail-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: #757575;
 }
@@ -121,29 +121,12 @@ body {
   fill: #2196f3;
 }
 .phone-icon {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: #757575;
 }
-/* .header-contact::before {
-  display: inline-flex;
-  content: "";
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/envelope\ hover.png);
-  background-size: contain;
-  margin-right: 10px;
-} */
-/* .header-phone::before {
-  display: inline-flex;
-  content: "";
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/Vector.png);
-  background-size: contain;
-  margin-right: 10px;
-} */
+.phone-icon:hover {
+  fill: #2196f3;
+}
 .link:hover,
 .link:focus {
   color: var(--logo-color);
@@ -233,9 +216,9 @@ body {
 .benefist-item::before {
   display: block;
   content: "";
+  background-size: 70px 70px;
   margin-bottom: 30px;
   height: 120px;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -309,22 +292,29 @@ img {
   list-style: none;
   /* background-color: red; */
 }
-.team-links {
-  padding: 12px;
+.team-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background-color: #fff;
 }
-.team-links:hover {
+.team-links a:hover {
+  background-color: #188ce8;
+}
+.team-links a:focus {
   background-color: #188ce8;
 }
 .team-element {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  fill: #757575;
+  fill: #afb1b8;
 }
 .team-element:hover {
-  fill: #fff;
+  fill: #ffffff;
+}
+.team-element:focus {
+  fill: #ffffff;
 }
 .team-list {
   display: flex;
@@ -362,7 +352,7 @@ img {
 }
 .team-description {
   padding-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 30px;
 }
 .klients-list {
   display: flex;
@@ -382,16 +372,15 @@ img {
 .klients-link:hover {
   border: solid #2196f3;
 }
+
 .klients-icon {
   display: block;
-  width: 106px;
-  height: 60px;
   margin: 16px 32px;
-  /* margin: 0%; */
   fill: #afb1b8;
 }
 .klients-icon:hover {
   fill: #2196f3;
+  box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
 }
 
 /* ----------footer-------------- */
@@ -460,8 +449,6 @@ img {
 }
 .icon-element {
   display: inline-block;
-  width: 20px;
-  height: 20px;
   fill: #ffffff;
 }
 
@@ -498,6 +485,7 @@ img {
 .main-button:focus {
   color: var(--background-color);
   background-color: var(--logo-color);
+  box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
 }
 
 /*-------project-section----  */
@@ -510,6 +498,12 @@ img {
   color: var(--title-color);
   margin-top: 0px;
   margin-bottom: 4px;
+}
+.project-item:hover {
+  box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
+}
+.project-item:focus {
+  box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
 }
 .project-list {
   display: flex;
