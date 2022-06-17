@@ -289,6 +289,7 @@ img {
   justify-content: center;
   padding: 0px;
   margin: 0px;
+  margin-top: 16px;
   list-style: none;
 }
 .team-links:not(:last-child) {
@@ -306,8 +307,14 @@ img {
   background-color: #188ce8;
   fill: #ffffff;
 }
+.team-links a:hover svg {
+  fill: #ffffff;
+}
 .team-links a:focus {
   background-color: #188ce8;
+}
+.team-links a:focus svg {
+  fill: #ffffff;
 }
 .team-element {
   display: inline-block;
@@ -358,30 +365,30 @@ img {
   padding-bottom: 30px;
 }
 .clients-list {
+  display: block;
   display: flex;
+  justify-content: center;
   list-style: none;
   padding-left: 0px;
 }
 
 .clients-link {
-  width: calc((100%-150px) / 6);
-  margin-right: 30px;
-}
-.clients-link {
   display: block;
+  display: flex;
   width: 170px;
   height: 92px;
-  background-color: #e5e5e5;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
   padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: calc((100%-150px) / 5);
+  margin-right: 30px;
 }
 .clients-link:hover {
-  border: solid #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .clients-icon {
-  display: block;
+  display: inline-block;
   fill: #afb1b8;
 }
 .clients-icon:hover {
@@ -414,7 +421,6 @@ img {
   background-color: #2f303a;
   padding-bottom: 60px;
   padding-top: 60px;
-  margin-top: 94px;
 }
 .footer-list.list {
   padding-left: 0px;
@@ -490,7 +496,9 @@ img {
 .main-button:focus {
   color: var(--background-color);
   background-color: var(--logo-color);
-  box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /*-------project-section----  */
@@ -504,11 +512,16 @@ img {
   margin-top: 0px;
   margin-bottom: 4px;
 }
+.project-link {
+  display: block;
+}
 .project-link:hover {
-  box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-link:focus {
-  box-shadow: 5px 3px 4px 2px rgb(135, 132, 132);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-list {
   display: flex;
