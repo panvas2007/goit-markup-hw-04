@@ -302,30 +302,16 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-}
-.team-links a:hover {
-  background-color: #188ce8;
-  fill: #ffffff;
-}
-.team-links a:hover svg {
-  fill: #ffffff;
-}
-.team-links a:focus {
-  background-color: #188ce8;
-}
-.team-links a:focus svg {
-  fill: #ffffff;
-}
-.team-element {
-  display: inline-block;
   fill: #afb1b8;
 }
-.team-element:hover {
+.team-links a:hover,
+.team-links a:focus {
+  background-color: #188ce8;
   fill: #ffffff;
+  outline: none;
+  transition: all 0.4s;
 }
-.team-element:focus {
-  fill: #ffffff;
-}
+
 .team-list {
   display: flex;
   padding: 0px;
@@ -367,32 +353,31 @@ img {
 .clients-list {
   display: block;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   padding-left: 0px;
 }
-
-.clients-link {
-  display: block;
-  display: flex;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: calc((100%-150px) / 5);
+.clients-list li.clients-link {
+  width: calc((100%-150px) / 6);
   margin-right: 30px;
 }
-.clients-link:hover {
-  border: 1px solid #2196f3;
-}
-
-.clients-icon {
-  display: inline-block;
+.clients-list li.clients-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border: 1px solid #afb1b8;
   fill: #afb1b8;
 }
-.clients-icon:hover {
+.clients-list li.clients-link a:hover,
+.clients-list li.clients-link a:focus {
+  border: 1px solid #2196f3;
   fill: #2196f3;
+  outline: none;
+  transition: all 0.4s;
+}
+.clients-list li.clients-link:last-child {
+  margin-right: 0px;
 }
 
 /* ----------footer-------------- */
@@ -447,7 +432,27 @@ img {
   margin-top: 20px;
   list-style: none;
 }
-.icon-link {
+.icon-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  background: rgba(255, 255, 255, 0.1);
+}
+.icon-link:not(:last-child) {
+  margin-right: 20px;
+}
+.icon-link a:hover,
+.icon-link a:focus {
+  background-color: #188ce8;
+  fill: #ffffff;
+  outline: none;
+  transition: all 0.4s;
+}
+/* .icon-link {
   padding: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -455,13 +460,11 @@ img {
 .icon-link:hover {
   background-color: #2196f3;
 }
-.icon-link:not(:last-child) {
-  margin-right: 20px;
-}
+
 .icon-element {
   display: inline-block;
   fill: #ffffff;
-}
+} */
 
 /* -------portfolio--------- */
 
