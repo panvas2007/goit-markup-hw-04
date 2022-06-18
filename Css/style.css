@@ -304,12 +304,17 @@ img {
   border-radius: 50%;
   fill: #afb1b8;
 }
+
 .team-links a:hover,
 .team-links a:focus {
   background-color: #188ce8;
-  fill: #ffffff;
+  /* fill: #ffffff; */
   outline: none;
   transition: all 0.4s;
+}
+.team-links a:hover svg,
+.team-links a:focus svg {
+  fill: #ffffff;
 }
 
 .team-list {
@@ -356,6 +361,8 @@ img {
   justify-content: space-between;
   list-style: none;
   padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .clients-list li.clients-link {
   width: calc((100%-150px) / 6);
@@ -367,6 +374,7 @@ img {
   align-items: center;
   height: 90px;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   fill: #afb1b8;
 }
 .clients-list li.clients-link a:hover,
@@ -439,7 +447,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
+  fill: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
 .icon-link:not(:last-child) {
@@ -452,19 +460,6 @@ img {
   outline: none;
   transition: all 0.4s;
 }
-/* .icon-link {
-  padding: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.icon-link:hover {
-  background-color: #2196f3;
-}
-
-.icon-element {
-  display: inline-block;
-  fill: #ffffff;
-} */
 
 /* -------portfolio--------- */
 
