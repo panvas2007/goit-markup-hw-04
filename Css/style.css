@@ -113,6 +113,14 @@ body {
   align-items: center;
   color: var(--contact-color);
 }
+.header-contact:hover svg,
+.header-contact:focus svg {
+  fill: var(--logo-color);
+}
+.header-phone:hover svg,
+.header-phone:focus svg {
+  fill: var(--logo-color);
+}
 .mail-icon {
   margin-right: 10px;
   fill: #757575;
@@ -451,7 +459,7 @@ img {
   background: rgba(255, 255, 255, 0.1);
 }
 .icon-link:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .icon-link a:hover,
 .icon-link a:focus {
